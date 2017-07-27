@@ -30,11 +30,9 @@ else
   # -p expose port
   # -d run in detached mode
   # --name define a name for the container(optional)
-  # TODO Remove it shell exposing
   DOCKER_JIRA_CORE_ID=$(docker run \
   -v ${DOCKER_JIRA_CORE_DATA_VOLUME}:/var/atlassian/jira \
   -v ${DOCKER_JIRA_CORE_LOGS_VOLUME}:/opt/atlassian/jira/logs \
-  -it \
   -p 8080:8080 \
   -d \
   --name "${DOCKER_JIRA_CORE_NAME}" "${DOCKER_JIRA_CORE_TAG}")
