@@ -1,7 +1,6 @@
 FROM ragedunicorn/openjdk:1.0.0-jdk-stable
 
-LABEL com.ragedunicorn.maintainer="Michael Wiesendanger <michael.wiesendanger@gmail.com>" \
-  com.ragedunicorn.version="1.0"
+LABEL com.ragedunicorn.maintainer="Michael Wiesendanger <michael.wiesendanger@gmail.com>"
 
 #         __________  ___       ______
 #        / /  _/ __ \/   |     / ____/___  ________
