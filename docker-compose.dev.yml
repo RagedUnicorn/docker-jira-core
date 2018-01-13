@@ -19,7 +19,7 @@ services:
       com.ragedunicorn.jira-core.environment: "dev"
       com.ragedunicorn.jira-core.description: "JIRA Core"
   postgresql:
-    image: ragedunicorn/postgresql:1.0.0-dev
+    image: ragedunicorn/postgresql:1.0.3-dev
     volumes:
       - postgresql_data:/var/lib/postgresql
     networks:
