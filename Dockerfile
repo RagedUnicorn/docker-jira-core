@@ -43,11 +43,7 @@ RUN \
     echo >&2 "Error: Failed to download Jira binary"; \
     exit 1; \
   fi && \
-  tar zxf atlassian-jira-software-"${JIRA_CORE_VERSION}".tar.gz --directory  "${JIRA_INSTALL}" --strip-components=1 --no-same-owner && \
-  if ! wget -q "https://jdbc.postgresql.org/download/postgresql-9.4.1212.jar" -P "${JIRA_INSTALL}/lib/"; then \
-    echo >&2 "Error: Failed to download Postgresql driver"; \
-    exit 1; \
-  fi && \
+  tar zxf atlassian-jira-core-"${JIRA_CORE_VERSION}".tar.gz --directory  "${JIRA_INSTALL}" --strip-components=1 --no-same-owner && \
   chmod -R 700 "${JIRA_INSTALL}/logs" && \
   chmod -R 700 "${JIRA_INSTALL}/temp" && \
   chmod -R 700 "${JIRA_INSTALL}/work" && \
