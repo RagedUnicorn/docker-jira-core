@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.6'
 services:
   jira-core:
     image: ragedunicorn/jira-core:1.0.1-stable
