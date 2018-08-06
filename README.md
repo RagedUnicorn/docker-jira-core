@@ -92,6 +92,16 @@ Stopping the running container
 sh dockery/dstop.sh
 ```
 
+## Configuration
+
+#### Build Args
+
+The image allows for certain arguments being overridden by build args.
+
+`JIRA_USER, JIRA_GROUP`
+
+They all have a default value and don't have to be overridden. For details see the Dockerfile.
+
 ## Healthcheck
 
 The production and the stack image supports a simple healthcheck showing whether the container is healthy or not. This can be configured inside `docker-compose.yml` or `docker-compose.stack.yml`
