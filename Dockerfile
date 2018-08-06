@@ -32,10 +32,6 @@ WORKDIR /home
 
 RUN \
   set -ex; \
-  apk add --no-cache su-exec="${SU_EXEC_VERSION}"
-
-RUN \
-  set -ex; \
   apk add --no-cache \
     su-exec="${SU_EXEC_VERSION}" && \
   mkdir -p "${JIRA_HOME}" && \
