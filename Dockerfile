@@ -50,6 +50,7 @@ RUN \
     exit 1; \
   fi && \
   tar zxf atlassian-jira-core-"${JIRA_CORE_VERSION}".tar.gz --directory  "${JIRA_INSTALL}" --strip-components=1 --no-same-owner && \
+  rm -rf atlassian-jira-core-"${JIRA_CORE_VERSION}".tar.gz && \
   chmod -R 700 "${JIRA_INSTALL}/logs" && \
   chmod -R 700 "${JIRA_INSTALL}/temp" && \
   chmod -R 700 "${JIRA_INSTALL}/work" && \
