@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   jira-core:
-    image: ragedunicorn/jira-core:1.1.0-stable
+    image: ragedunicorn/jira-core:1.2.0-stable
     volumes:
       - jira_home:/var/atlassian/jira
       - jira_logs:/opt/atlassian/jira/logs
